@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>forget password</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style2.css">
+        <script src="https://kit.fontawesome.com/bb54249059.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <h1 id="title">Forget password</h1>
+                <h2>Enter your email</h2>
+                <form>
+                    <div class="input">
+                        <div class="ifield">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="myInput" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button type="button" id="submit" onclick="change()">Submit</button>
+                        <p id="validation"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            function change() {
+                var button = document.getElementById("submit");
+                var input = document.getElementById("myInput");
+
+                var validation = document.getElementById("validation");
+                if (input.value === "") {
+                    validation.textContent = "Field is empty. Please fill it.";
+                    validation.style.color = "red";
+                } else {
+                    button.style.backgroundColor = "green";
+                    validation.textContent = " ";
+                    window.location.href = "otp.html";
+                }
+            }
+        </script>
+    </body>
+</html>

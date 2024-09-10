@@ -1,0 +1,142 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book store</title>
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--css file link-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+</head>
+<body>
+    
+    <!-- header section starts -->
+    <header class="header">
+        <div class="header-1">
+            <a href="#" class="logo"> <i class="fas fa-book"></i>Otaku heaven</a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="search here" id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="/login/login.html" class="fas fa-user"></a>
+            </div>
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="/Manga/Manga.html">Books</a>
+                <a href="/Manga/Merchandise.html">Merchandises</a>
+                <a href="/Manga/Action Figures .html">Action Figure</a>
+                <a href="/order tracking/track_order.html">Track Orders</a>
+            </nav>
+        </div>
+    </header>
+    <!-- heder section end-->
+
+    <!-- bottom navbar-->
+
+    <nav class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#books" class="fas fa-list"></a>
+        <a href="#merchandises" class="fas fa-tags"></a>
+        <a href="#reviews" class="fas fa-comments"></a>
+        <a href="#blogs" class="fas fa-blog"></a>
+    </nav>
+
+<!-- home section starts -->
+<section class="home" id="home">
+    <div class="row">
+        <div class="content">
+            <h3>upto <span>75%</span> off</h3>
+            <p>On merchandises, books, action figures and many more with exciting offers.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+
+        <div class="books-slider">
+            <div class="wraper">
+                <a href="#"><img src="images/naruto shippuden.jpg" alt=""></a>
+                <a href="#"><img src="images/bleach.jpg" alt=""></a>
+                <a href="#"><img src="images/one piece.jpg" alt=""></a>
+                <a href="#"><img src="images/dragon ball z.jpg" alt=""></a>
+                <a href="#"><img src="images/tokyo revengers.jpg" alt=""></a>
+                <a href="#"><img src="images/agate.jpg" alt=""></a>
+            </div>
+            <img src="images/stand.png" class="stand" alt="">
+        </div>
+    </div>
+</section>
+<!-- home section ends-->
+<!-- merchandise -->
+<section class="merchandise">
+    <div class="row">
+        <div class="content-2">
+            <h3>Exclusive merchandise</h3>
+            <p>Exclusive merchandise designed by best designers <br>from across the world with premium offers.</p>
+        </div>
+        <div class="clothes">
+            <a href=""><img src="images/naruto-tshit-removebg-preview.png" alt=""></a>
+            <a href=""><img src="images/gear5-removebg-preview.png" alt=""></a>
+            <a href="#" class="btn-2">Shop Now</a>
+        </div>
+    </div>
+</section>
+<div class="action-figure">
+    <div class="row">
+        <div class="content">
+            <h3>Premium Action Figures</h3>
+            <p>Premium action figures with high quality material</p>
+            <a href="#" class="btn-3">Shop Now</a>
+        </div>
+        <div class="figure">
+            <a href="#"><img src="images/action.png" alt=""></a>
+        </div>
+    </div>
+</div>
+<footer>
+<div class="contact">
+    <div class="container">
+        <div class="row-2">
+            <div class="contact-left">
+                <h1 class="sub-title"style="
+                font-size: 4rem;
+                color: green;">Contact Us</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>otakuheaven@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 1234567890</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://twitter.com/home"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://accounts.snapchat.com/accounts/v2/login"><i class="fa-brands fa-square-snapchat"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn4">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+    <p>Copyright © All rights reverseved by developers.</p>
+</div>
+</div>
+</footer>
+<!-- Custom js file -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</body>
+</html>
